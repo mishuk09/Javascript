@@ -1,4 +1,5 @@
-//background color by function call
-function redBackground() {
-    document.body.style.backgroundColor = 'red';
+const yellow = document.getElementById('yellowBackground');
+yellow.onclick = function makeYellow() {
+    document.body.style.backgroundColor = 'green';
+
 }
