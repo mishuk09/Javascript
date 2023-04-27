@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>please addd some comment</h2>
+    <section>
+        <h4>Enter your comment here</h4>
+        <div id="commentSection">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet deleniti perspiciatis placeat eligendi? Quod quas temporibus hic, nemo nulla asperiores, in doloremque ea maxime eos nisi corporis soluta harum.</p>
+        </div>
+        <div id="commentSection2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet deleniti perspiciatis placeat eligendi? Quod quas temporibus hic, nemo nulla asperiores, in doloremque ea maxime eos nisi corporis soluta harum.</p>
+        </div>
+        <div id="commentSection3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet deleniti perspiciatis placeat eligendi? Quod quas temporibus hic, nemo nulla asperiores, in doloremque ea maxime eos nisi corporis soluta harum.</p>
+        </div>
+
+        <div>
+
+            <textarea name="" id="newComment" cols="60" rows="4"></textarea><br>
+            <button id="postComment">Post</button>
+        </div>
+    </section>
+
+
+    <script>
+        //add button 
+        document.getElementById('postComment'), addEventListener('click', function() {
+            const p = document.getElementById('newComment');
+
+            const p2 = console.log(newComment.value);
+
+
+            //create comment paragraph
+
+            const paragraph = document.createElement('paragraph');
+            paragraph.innerText = newComment.value;
+
+            const getDiv = document.getElementById('commentSection');
+            getDiv.appendChild(paragraph);
+
+
+            //clean the comment box
+            newComment.value = '';
+        });
+    </script>
+</body>
+
+</html>
