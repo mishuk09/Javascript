@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <p id="clickMethod"></p>
+    <input id="inputFeild" type="text">
+    <button id="updateName">Store</button>
+    <button onclick="clickforHidden">Direct add Events</button>
+    <button id="directHandler">Click</button>
+
+    <script>
+        function clickforHidden() {
+            const p = document.getElementById('cliclMethod');
+            p.innerText = 'Hello js';
+
+        }
+        //direct
+        document.getElementById('directHandler').addEventListener('click', function() {
+            const p = document.getElementById('clickMethod');
+            p.innerText = 'Hello';
+
+        });
+
+        ///direct
+        document.getElementById('updateName').addEventListener('click', function() {
+            const name = document.getElementById('inputFeild');
+            const result = document.getElementById('clickMethod');
+            result.innerText = inputFeild.value;
+            inputFeild.value = '';
+
+
+        })
+    </script>
+</body>
+
+</html>
