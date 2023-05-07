@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <h1 class="text-5xl text-center mt-20">
+        Dashbord of <span class="text-6xl text-green-500">FatherBank!</span>
+    </h1>
+    <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-blue-400 p-8 rounded">
+                <h3 class="text-2xl">Deposite</h3>
+                <h4 class="text-4xl">$00</h4>
+            </div>
+            <div class="bg-orange-300 p-8 rounded">
+                <h3 class="text-2xl">Deposite</h3>
+                <h4 class="text-4xl">$400</h4>
+            </div>
+            <div class="bg-green-400 p-8 rounded">
+                <h3 class="text-2xl">Deposite</h3>
+                <h4 class="text-4xl">$1200</h4>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Diposite andwidrow section -->
+
+    <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-red-100 py-5 px-3 rounded">
+
+                <h3 class="text-2xl">Diposite here</h3>
+                <div class="my-5" action="">
+                    <input id="dipositeAmount" class="border-2 border-grey-400 rounded block    " type="email" placeholder="$ Enter Amount">
+                    <button id="dipositeButton" class=" my-2 px-3 border-grey-400 border-2 text-white rounded p-1  bg-green-600">Diposite</button>
+                </div>
+            </div>
+            <div class="bg-red-100 py-5 px-3 rounded">
+
+                <h3 class="text-2xl">Withdraw here</h3>
+                <div class="my-5" action="">
+                    <input id="withdrawAmount" class="border-2 border-grey-400 rounded block    " type="email" placeholder="$ Enter Amount">
+                    <button id="withdrawButton" class=" my-2 px-3 border-grey-400 border-2 text-white rounded p-1  bg-green-600">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

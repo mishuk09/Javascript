@@ -6,4 +6,10 @@ document.getElementById('loginButton').addEventListener('click', function() {
 
     console.log(userEmail);
     console.log(userPassword);
+
+    if (userEmail == 'mishukinfo09@gmail.com' && userPassword == '123456') {
+        // console.log("Valid ")
+        window.location.href = 'bankDetils.html';
+
+    }
 })
