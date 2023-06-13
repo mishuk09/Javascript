@@ -9,11 +9,14 @@ document.getElementById('dipositeButton').addEventListener('click', function() {
 
 
 
-})
+});
 
 
 document.getElementById('withdrawButton').addEventListener('click', function() {
     const withdrawInput = document.getElementById('withdrawAmount');
     const result = withdrawAmount.value;
     console.log(result);
+});
+document.getElementById('dipositeButton').addEventListener('click', function() {
+    console.log('button click');
 })
