@@ -1,22 +1,12 @@
 document.getElementById('dipositeButton').addEventListener('click', function() {
-    const enterAmount = document.getElementById('dipositeAmount');
-    const result = dipositeAmount.value;
-    console.log(result);
 
-    // const diposite = document.getElementById('showDiposite');
-    // console.log(diposite.innerText);
-
+    // const dipositeInput = document.getElementById('dipositeAmount');
+    // const result = dipositeInput.value;
+    // console.log(result);
+    const dipositeInput = document.getElementById('dipositeAmount');
+    const diposite_Amount = dipositeInpu;
+    console.log(diposite_Amount);
 
 
 
 });
-
-
-document.getElementById('withdrawButton').addEventListener('click', function() {
-    const withdrawInput = document.getElementById('withdrawAmount');
-    const result = withdrawAmount.value;
-    console.log(result);
-});
-document.getElementById('dipositeButton').addEventListener('click', function() {
-    console.log('button click');
-})
