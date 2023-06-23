@@ -106,3 +106,18 @@
 //     document.getElementById("sub-total").innerText = totalAllPrice;
 //     document.getElementById("total").innerText = totalAllPrice;
 // }
+
+document.getElementById('plusBtnCase').addEventListener('click', function() {
+
+    const caseInput = document.getElementById('countCase');
+    const caseNumber = caseInput.value;
+    caseInput.value = parseInt(caseNumber) + 1;
+
+})
+
+document.getElementById('minusBtnCase').addEventListener('click', function() {
+    const minusBt = document.getElementById('countCase');
+    const minusIn = minusBt.value;
+    minusBt.value = parseInt(minusBt) - 1;
+
+})
