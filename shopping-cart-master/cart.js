@@ -107,17 +107,30 @@
 //     document.getElementById("total").innerText = totalAllPrice;
 // }
 
+function UpdateCaseNumber(isIncreasing) {
+    const caseInput = document.getElementById('countCase');
+    let caseNumber = caseInput.value;
+    if (isIncreasing) {
+        caseNumber = parseInt(caseNumber) + 1;
+    } else if (caseNumber > 0) {
+        caseNumber = parseInt(caseNumber) - 1;
+    }
+    caseInput.value = caseNumber;
+
+    const caseTotal = document.getElementById('case-total');
+    caseTotal.innerText = caseNumber * 59;
+
+}
 document.getElementById('plusBtnCase').addEventListener('click', function() {
 
-    const caseInput = document.getElementById('countCase');
-    const caseNumber = caseInput.value;
-    caseInput.value = parseInt(caseNumber) + 1;
-
+    UpdateCaseNumber(true);
 })
 
 document.getElementById('minusBtnCase').addEventListener('click', function() {
-    const minusBt = document.getElementById('countCase');
-    const minusIn = minusBt.value;
-    minusBt.value = parseInt(minusBt) - 1;
+
+    UpdateCaseNumber(false);
 
 })
+
+
+//UpdatecaseTotal
